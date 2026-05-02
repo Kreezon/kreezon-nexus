@@ -26,16 +26,14 @@ const groups: { title: string; items: { name: string; level: number }[] }[] = [
       { name: "FastAPI", level: 88 },
       { name: "Flask", level: 84 },
       { name: "Streamlit", level: 90 },
-      { name: "SQL", level: 82 },
     ],
   },
   {
     title: "Programming",
     items: [
       { name: "Python", level: 95 },
-      { name: "JavaScript", level: 78 },
       { name: "C++", level: 70 },
-      { name: "TypeScript", level: 72 },
+      { name: "SQL", level: 82 },
     ],
   },
   {
@@ -53,7 +51,6 @@ const groups: { title: string; items: { name: string; level: number }[] }[] = [
       { name: "Git", level: 92 },
       { name: "VS Code", level: 96 },
       { name: "Jupyter", level: 92 },
-      { name: "Postman", level: 80 },
     ],
   },
 ];
