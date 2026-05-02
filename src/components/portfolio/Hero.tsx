@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Github, Linkedin, Mail, Download, FolderGit2, Sparkles, ArrowRight } from "lucide-react";
 import { NeuralBackground } from "./NeuralBackground";
+import profileImg from "@/assets/shreyas-profile.jpg";
 
 const titles = [
   "Machine Learning Engineer",
@@ -124,13 +125,19 @@ export function Hero() {
           <div className="absolute inset-6 overflow-hidden rounded-full">
             <div className="absolute inset-0 bg-[radial-gradient(closest-side,color-mix(in_oklab,var(--neon)_25%,transparent),transparent_70%)]" />
             <div className="grid-bg absolute inset-0 opacity-50" />
-            {/* central avatar mark */}
+            {/* central avatar */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-gradient-to-br from-[var(--neon)] via-[var(--cyan-glow)] to-[var(--electric)] text-3xl font-black text-[#050505] shadow-[0_0_50px_var(--neon)]">
-                  SS
+              <div className="relative h-full w-full">
+                <div className="absolute inset-3 overflow-hidden rounded-full ring-2 ring-[var(--neon)]/40 shadow-[0_0_60px_var(--neon)]">
+                  <img
+                    src={profileImg}
+                    alt="Shreyas Srivastava — AI & Machine Learning Engineer"
+                    className="h-full w-full object-cover"
+                    loading="eager"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#050505]/70" />
                 </div>
-                <div className="mt-3 font-mono text-[10px] tracking-[0.3em] text-[var(--cyan-glow)]">
+                <div className="absolute inset-x-0 bottom-6 text-center font-mono text-[10px] tracking-[0.3em] text-[var(--cyan-glow)] drop-shadow-[0_0_8px_var(--cyan-glow)]">
                   NEURAL · CORE · ONLINE
                 </div>
               </div>
