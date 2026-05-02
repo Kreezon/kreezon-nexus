@@ -74,8 +74,8 @@ export function Hero() {
             initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
             className="mt-6 max-w-xl text-base leading-relaxed text-foreground/70 sm:text-lg"
           >
-            I architect intelligent systems — from <span className="text-foreground">RAG pipelines</span> and{" "}
-            <span className="text-foreground">multi-agent LLMs</span> to production-ready ML applications that turn data into decisions.
+            I build <span className="text-foreground">machine learning</span> models and{" "}
+            <span className="text-foreground">data-driven applications</span> — exploring the world of AI one project at a time.
           </motion.p>
 
           <motion.div
